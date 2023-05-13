@@ -2,18 +2,20 @@
     pipeline {
     agent any
 	    
-   tools
-    {
-       maven "Maven"
-    }
-	    
-    environment {
+	     environment {
     jobName           = "${env.JOB_NAME}"
     workspace         = "${env.WORKSPACE}"
     branch            = "main"
     buildNumber       = "${env.BUILD_NUMBER}" 
 
   }
+	    
+   tools
+    {
+       maven "Maven"
+    }
+	    
+   
 
 
     stages {
