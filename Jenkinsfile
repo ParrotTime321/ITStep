@@ -33,7 +33,7 @@ stage('Build and tag') {
 	    stage('Publish') {
           
 		    steps {
-			    sh  'docker push ievolved/exam:v$buildnumber'
+			    sh  'docker push ievolved/exam v$buildnumber'
 			  }
         }
 	    
