@@ -2,10 +2,7 @@
     pipeline {
     agent any
 	    
-	     tools
-    {
-       maven "Maven"
-    }
+	
 	    
 	     environment {
 	workspace	= "${env.WORKSPACE}"
@@ -26,12 +23,7 @@
             }
         }
 	    
-	     stage('Execute Maven') {
-           steps {
-             
-                sh 'mvn package'             
-          }
-        }
+	    
 stage('Build and tag') {
            steps {
               sh "echo my build number $buildNumber"
