@@ -3,10 +3,9 @@
     agent any
 	    
 	     environment {
-	workspace		= "${env.WORKSPACE}"
+	workspace	= "${env.WORKSPACE}"
 	branch		= "main"
-	buildNumber		= "${env.BUILD_NUMBER}" 
-
+	buildNumber	= "${env.BUILD_NUMBER}" 
   }
 	    
    tools
