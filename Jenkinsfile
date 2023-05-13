@@ -2,7 +2,7 @@
     pipeline {
     agent any
 	    
-	     environment {   
+	     environment {
 	workspace		= "${env.WORKSPACE}"
 	branch		= "main"
 	buildNumber		= "${env.BUILD_NUMBER}" 
