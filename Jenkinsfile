@@ -22,7 +22,7 @@
         stage('GIT') {
             steps {
             git branch: 'main', url: 'https://github.com/ParrotTime321/ITStep.git'
-		    sh 'git pull'
+		    
             }
         }
 	    
