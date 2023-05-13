@@ -3,7 +3,7 @@
     agent any
 	    
 	     environment {
-    jobName           = "${env.JOB_NAME}"
+    
     workspace         = "${env.WORKSPACE}"
     branch            = "main"
     buildNumber       = "${env.BUILD_NUMBER}" 
