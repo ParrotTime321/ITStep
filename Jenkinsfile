@@ -32,13 +32,9 @@ stage('Build and tag') {
         }
 	    stage('Publish') {
           
-            steps {
-        withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
-          sh  'docker push ievolved/exam:v$buildnumber'
-        
-        }
-                  
-          }
+		    steps {
+			    sh  'docker push ievolved/exam:v$buildnumber'
+			  }
         }
 	    
 	     stage('Run Docker container') {
