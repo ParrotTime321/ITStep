@@ -2,16 +2,18 @@
     pipeline {
     agent any
 	    
+	     tools
+    {
+       maven "Maven"
+    }
+	    
 	     environment {
 	workspace	= "${env.WORKSPACE}"
 	branch		= "main"
 	buildNumber	= "${env.BUILD_NUMBER}"
 	     }
 	    
-   tools
-    {
-       maven "M3"
-    }
+  
 	    
    
 
